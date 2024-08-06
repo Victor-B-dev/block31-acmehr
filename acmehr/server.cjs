@@ -1,6 +1,8 @@
+require('dotenv').config()
 const express = require ('express');
 const { getEmployees } = require('./db/employees.cjs');
 const app = express ();
+
 
 const client = require('./db/client.cjs');
 client.connect()
